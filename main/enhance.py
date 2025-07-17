@@ -53,7 +53,7 @@ async def enhance_video(client: Client, message: Message):
                "unsharp=5:5:1.0:5:5:0.0,"
                "eq=contrast=1.2:brightness=0.05:saturation=1.2",
         "-map", "0",
-        "-c:v", "libx264", "-preset", "ultrafast", "-crf", "28",
+        "-c:v", "libx264", "-preset", "fast", "-crf", "28",
         "-c:a", "copy",
         "-c:s", "mov_text",
         output_path
